@@ -4,6 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Groceries</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- section navigation -->
+      <div class="navigation">
+        <a href="#" class="logo">Logo</a>
+        <div class="nav">
+          <div class="nav-item">
+            <i class="uil uil-times nav-close-btn"></i>
+            <a href="#"><i class="uil uil-home"></i>Home</a>
+            <a href="#ourPackage"
+              ><i class="uil uil-info-circle"></i>Our Package</a
+            >
+            <a href="#"><i class="uil uil-envelope"></i>Call Us</a>
+          </div>
+        </div>
+        <i class="uil uil-apps nav-menu-btn"></i>
+      </div>
+    </header>
+
+    <!-- section title -->
+    <section id="title">
+      <h1>
+        Top Rated E-Groceries Shop <br />
+        Indonesia
+      </h1>
+      <p>Every Day With Best Ingredients</p>
+    </section>
+
+    <section id="slideForm">
+      <!-- section image slide -->
+      <div class="slide">
+        <p>image</p>
+      </div>
+
+      <!-- section form -->
+      <div class="sectionForm">
+        <div class="formTitle">
+          <h1>Contact Us</h1>
+          <h3>
+            Sales akan menghubungi anda 1x24 <br />
+            jam setelah data kami terima
+          </h3>
+        </div>
+
+        <form class="form" id="form">
+          <div class="form-control">
+            <label>Username</label>
+            <input type="text" placeholder="Username" id="username" />
+            <i class="fas fa-circle-check"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Email</label>
+            <input type="email" placeholder="example@email.com" id="email" />
+            <i class="fas fa-circle-check"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="interested">What are you interested in?</label>
+            <select id="option" name="option" class="input">
+              <option value="Milk">Milk</option>
+              <option value="Vegetable">Vegetable</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Information -->
+    <section id="information">
+      <div class="info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          vero inventore cum voluptatibus et tempora illo voluptas architecto
+          accusamus nesciunt quasi assumenda eum, non rem, atque sunt.
+          Molestiae, velit corrupti.
+        </p>
+      </div>
+      <div class="infoControl">
+        <div class="infoPoint">This Point Information</div>
+      </div>
+    </section>
+
+    <!-- Section Our Package -->
+    <section id="ourPackage">
+      <div class="ourTitle">
+        <p>Our Package</p>
+      </div>
+
+      <div class="package">
+        <div class="packageControl">
+          <img
+            src="/assets/vegetables.jpg"
+            alt="Fresh vegetable"
+            class="packageImage"
+          />
+          <div class="packageTitle">
+            <h3>Fresh Vegetable</h3>
+            <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+          </div>
+        </div>
+        <div class="packageControl">
+          <img src="/assets/fruit.jpg" alt="Fresh Fruit" class="packageImage" />
+          <div class="packageTitle">
+            <h3>Fresh Fruit</h3>
+            <p>
+              Buah dengan kualitas terbaik dari lokal atau import dan harga yang
+              menarik
+            </p>
+          </div>
+        </div>
+        <div class="packageControl">
+          <img
+            src="/assets/delivery.jpg"
+            alt="Instant Delivery"
+            class="packageImage"
+          />
+          <div class="packageTitle">
+            <h3>Instant Delivery</h3>
+            <p>
+              Dikirim instant oleh kurir yang telah di training dengan SOP untuk
+              menjaga kondisi belanjaan kamu
+            </p>
+          </div>
+        </div>
+
+        <div class="packageControl">
+          <img
+            src="/assets/ingredient.jpg"
+            alt="Ingredient"
+            class="packageImage"
+          />
+          <div class="packageTitle">
+            <h3>Kitchen Ingredient</h3>
+            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+          </div>
+        </div>
+        <div class="packageControl">
+          <img
+            src="/assets/kitchenset.jpg"
+            alt="Kitchen Set"
+            class="packageImage"
+          />
+          <div class="packageTitle">
+            <h3>Kitchen Set</h3>
+            <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+          </div>
+        </div>
+        <div class="packageControl">
+          <img src="/assets/bundling.jpg" alt="Bundling" class="packageImage" />
+          <div class="packageTitle">
+            <h3>Bundling Set</h3>
+            <p>
+              Bingung masak apa? sudah tersedia paket untuk kamu masak di
+              dapurmu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

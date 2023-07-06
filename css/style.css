@@ -1,0 +1,286 @@
+/* ====== Google Fonts ====== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+
+/* ====== CSS Variables ====== */
+:root {
+  --white-color: #fff;
+  --dark-color: #000;
+  --body-bg-color: #fff;
+  --section-bg-color: #202834;
+  --navigation-item-hover: #3b5378;
+
+  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0, 1);
+  --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+
+  --scroll-bar-color: #fff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+/* ====== Main Css ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--body-bg-color);
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: calc(5rem + 1rem);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navigation {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  transition: 0.3s ease;
+  overflow: hidden;
+  background-color: #979797;
+}
+
+.nav-close-btn,
+.nav-menu-btn {
+  display: none;
+}
+
+.navigation .logo {
+  color: var(--dark-color);
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+}
+
+.nav .nav-item a {
+  color: var(--dark-color);
+  font-size: 1em;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+}
+
+.nav .nav-item a i {
+  display: none;
+}
+
+.nav .nav-item a:not(:last-child) {
+  margin-right: 45px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 200px 75px 200px;
+}
+
+#title h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+}
+
+#title p {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1em;
+  padding: 20px 20px;
+}
+
+#slideForm {
+  display: flex;
+}
+
+#slideForm .slide {
+  text-align: center;
+  min-width: 60%;
+  padding: 10px 30px 10px;
+}
+
+#slideForm form {
+  min-width: 40%;
+  padding: 10px 30px 10px;
+}
+
+.formTitle {
+  background-color: darkgray;
+  padding: 20px 40px;
+  border-bottom: 1px solid darkgray;
+}
+
+.formTitle h1 {
+  margin: 0;
+  font-weight: 800;
+}
+
+.formTitle h3 {
+  font-weight: 300;
+}
+
+.sectionForm {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 2);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-circle-check {
+  color: green;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+.form-control select {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+}
+
+#information {
+  margin: 20px;
+}
+
+.ourTitle {
+  text-align: center;
+  padding: 80px 0;
+  margin-bottom: 3rem;
+  background: slategrey;
+}
+
+.package {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.packageControl {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+.packageControl .packageImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.packageControl .packageTitle {
+  width: 80%;
+  text-align: center;
+}
+
+.packageControl .packageTitle h3 {
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+/* .package .packageControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  margin-bottom: 1em;
+  width: 250px;
+  height: 250px;
+  background-image: url(/assets/vegetables.jpg);
+  background-size: cover;
+} */
