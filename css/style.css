@@ -29,6 +29,11 @@ body {
   background: var(--body-bg-color);
 }
 
+#title h1 {
+  font-weight: 800;
+  font-size: 3em;
+}
+
 header {
   z-index: 999;
   position: fixed;
@@ -47,7 +52,7 @@ header .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 150px;
+  padding: 1.4rem 7%;
   transition: 0.3s ease;
   overflow: hidden;
   background-color: #979797;
@@ -69,10 +74,28 @@ header .navigation {
 }
 
 .nav .nav-item a {
+  display: inline-block;
   color: var(--dark-color);
   font-size: 1em;
   text-decoration: none;
   text-shadow: var(--text-shadow);
+}
+
+.nav .nav-item a:hover {
+  color: var(--navigation-item-hover);
+}
+
+.nav .nav-item a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--navigation-item-hover);
+  transform: scaleX(0);
+}
+
+.nav .nav-item a:hover::after {
+  transform: scaleX(1);
+  transition: 0.3s ease;
 }
 
 .nav .nav-item a i {
@@ -110,6 +133,11 @@ header .navigation {
 
 #slideForm {
   display: flex;
+}
+
+.slide img {
+  height: 500px;
+  width: 500px;
 }
 
 #slideForm .slide {
@@ -240,6 +268,11 @@ button {
   background: slategrey;
 }
 
+.ourTitle p {
+  font-weight: 800;
+  font-size: 3em;
+}
+
 .package {
   display: flex;
   flex-wrap: wrap;
@@ -270,17 +303,28 @@ button {
   margin-bottom: 1em;
   font-weight: 700;
 }
-/* .package .packageControl {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  margin-bottom: 1em;
-  width: 250px;
-  height: 250px;
-  background-image: url(/assets/vegetables.jpg);
-  background-size: cover;
-} */
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+}
